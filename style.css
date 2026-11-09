@@ -1,0 +1,94 @@
+:root {
+    --bg: #f5f7fa;
+    --kartu: #ffffff;
+    --teks: #1f2933;
+    --teks-redup: #6b7785;
+    --garis: #bbe61e;
+    --aksen: #f59210;
+    --sorot: #e8f0fe;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--teks);
+    line-height: 1.5;
+}
+
+header {
+    background: var(--aksen);
+    color: #fff;
+    text-align: center;
+    padding: 28px 16px;
+}
+header h1 { margin: 0; font-size: 1.6rem; }
+header p { margin: 6px 0 0; opacity: 0.9; }
+
+main {
+    max-width: 800px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+section {
+    background: var(--kartu);
+    border: 1px solid var(--garis);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+section h2 { margin: 0 0 14px; font-size: 1.15rem; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 9px 10px; text-align: left; border-bottom: 1px solid var(--garis); }
+th { background: var(--bg); font-size: 0.9rem; }
+.tabel-diri td:first-child { width: 40%; color: var(--teks-redup); }
+.scroll-x { overflow-x: auto; }
+
+/* Baris jadwal hari ini disorot */
+tr.hari-ini td { background: var(--sorot); font-weight: 600; }
+
+/* Form tugas */
+#formTugas { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+#formTugas input, #formTugas select {
+    flex: 1 1 140px;
+    padding: 8px 10px;
+    border: 1px solid var(--garis);
+    border-radius: 6px;
+    font: inherit;
+}
+#formTugas input:focus, #formTugas select:focus,
+button:focus-visible {
+    outline: 2px solid var(--aksen);
+    outline-offset: 1px;
+}
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: var(--aksen);
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+button:hover { filter: brightness(0.92); }
+
+#ringkasan { color: var(--teks-redup); font-size: 0.9rem; margin: 0 0 8px; }
+
+#daftarTugas { list-style: none; margin: 0; padding: 0; }
+#daftarTugas li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--garis);
+}
+#daftarTugas .isi { flex: 1; }
+#daftarTugas .hari { font-size: 0.85rem; color: var(--teks-redup); }
+#daftarTugas li.selesai .isi { text-decoration: line-through; opacity: 0.55; }
+#daftarTugas .hapus { background: transparent; color: #c0392b; padding: 4px 8px; }
+#daftarTugas .hapus:hover { background: #fdecea; filter: none; }
+.kosong { color: var(--teks-redup); padding: 10px 0; }

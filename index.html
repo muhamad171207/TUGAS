@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Tugas Kuliah Minggu Ini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Catatan Tugas Kuliah Minggu Ini</h1>
+        <p id="tanggalHariIni"></p>
+    </header>
+
+    <main>
+        <!-- 1. Data diri -->
+        <section>
+            <h2>Data Diri</h2>
+            <table class="tabel-diri">
+                <tr><td>Nama</td><td>Muhamad Nur Asikin</td></tr>
+                <tr><td>NIM</td><td>707012600030</td></tr>
+                <tr><td>Program Studi</td><td>Sistem Informasi Kota Cerdas</td></tr>
+                <tr><td>Kelas</td><td>50-03</td></tr>
+                
+            </table>
+        </section>
+
+        <!-- 2. Jadwal kuliah -->
+        <section>
+            <h2>Jadwal Kuliah</h2>
+            <div class="scroll-x">
+                <table id="tabelJadwal">
+                    <thead>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Jam</th>
+                            <th>Mata Kuliah</th>
+                            <th>Ruang</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 3. Tugas kuliah -->
+        <section>
+            <h2>Tugas Kuliah Minggu Ini</h2>
+
+            <form id="formTugas">
+                <input type="text" id="inputMatkul" placeholder="Mata kuliah" required>
+                <input type="text" id="inputTugas" placeholder="Deskripsi tugas" required>
+                <select id="inputHari">
+                    <option>Senin</option>
+                    <option>Selasa</option>
+                    <option>Rabu</option>
+                    <option>Kamis</option>
+                    <option>Jumat</option>
+                    <option>Sabtu</option>
+                    <option>Minggu</option>
+                </select>
+                <button type="submit">Tambah tugas</button>
+            </form>
+
+            <p id="ringkasan"></p>
+            <ul id="daftarTugas"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
