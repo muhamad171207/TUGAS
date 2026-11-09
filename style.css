@@ -3,8 +3,8 @@
     --kartu: #ffffff;
     --teks: #1f2933;
     --teks-redup: #6b7785;
-    --garis: #bbe61e;
-    --aksen: #f59210;
+    --garis: #d2d3cf;
+    --aksen: #fa8e00;
     --sorot: #e8f0fe;
 }
 
@@ -20,7 +20,7 @@ body {
 
 header {
     background: var(--aksen);
-    color: #fff;
+    color: #120101;
     text-align: center;
     padding: 28px 16px;
 }
