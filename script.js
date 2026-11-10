@@ -11,7 +11,8 @@ document.getElementById("tanggalHariIni").textContent =
 // otomatis disembunyikan saat ditampilkan.
 const jadwal = [
     { hari: "Senin", jam: "", matkul: "", ruang: "" },
-    { hari: "Selasa", jam: "08.30 - 13.30", matkul: "ALGORITMA DAN PEMROGRAMAN", ruang: "R. A5" },
+    { hari: "Selasa", jam: "08.30 - 10.30", matkul: "ALGORITMA DAN PEMROGRAMAN", ruang: "R. A5" },
+    { hari: "Selasa", jam: "10.30 - 12.30", matkul: "SISTEM INFORMASI MANAJEMEN KOTA CERDAS", ruang: "R. KU3.07.08" },
     { hari: "Selasa", jam: "15.30 - 17.30", matkul: "INTERNALISASI BUDAYA DAN PEMBENTUKAN KARAKTER", ruang: "R. KU3.07.14" },
     { hari: "Rabu",   jam: "06.30 - 09.30", matkul: "MATEMATIKA DISKRIT", ruang: "R. KU3.07.16" },
     { hari: "Rabu",   jam: "10.30 - 13.30", matkul: "PENGANTAR TEKNOLOGI INFORMASI", ruang: "R. KU3.07.13" },
@@ -20,6 +21,7 @@ const jadwal = [
     { hari: "Kamis",  jam: "12.30 - 16.30", matkul: "ALGORITMA DAN PEMROGRAMAN", ruang: "R. B4" },
     { hari: "Jumat",  jam: "07.30 - 09.30", matkul: "JARINGAN KOMPUTER", ruang: "R. D1" },
     { hari: "Jumat",  jam: "13.30 - 16.30", matkul: "DESAIN ANTAR MUKA PENGGUNA", ruang: "R. A2" },
+    { hari: "Sabtu", jam: "07.30 - 09.30", matkul: "SISTEM INFORMASI MANAJEMEN KOTA CERDAS", ruang: "R. B1" },
     { hari: "Minggu",  jam: "", matkul: "", ruang: "" }
 ];
 
